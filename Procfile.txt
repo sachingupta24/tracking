@@ -1,1 +1,1 @@
-web: gunicorn quartzmain:app
+web: gunicorn quartzmain:quartzapp
