@@ -1,0 +1,19 @@
+<doctype html>
+<title>New MicronPart - Flask Quartz Database</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<h2>New MicronPart</h2>
+
+{% from "_quartzformhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.quartzserialnumber) }}
+        {{ render_field(form.quartz_type) }}
+        {{ render_field(form.title) }}
+        {{ render_field(form.installation_date) }}
+        {{ render_field(form.micronpart) }}
+        {{ render_field(form.toolname) }}
+        {{ render_field(form.quartz_condition_type) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>

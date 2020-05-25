@@ -1,0 +1,17 @@
+<doctype html>
+<title>Delete MicronPart - New Quartz Database</title>
+<h2>Delete MicronPart</h2>
+
+{% from "_quartzformhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.quartzserialnumber) }}
+        {{ render_field(form.quartz_type) }}
+        {{ render_field(form.title) }}
+        {{ render_field(form.installation_date) }}
+        {{ render_field(form.micronpart) }}
+        {{ render_field(form.toolname) }}
+        {{ render_field(form.quartz_condition_type) }}
+    </dl>
+    <p><input type=submit value=Delete>
+</form>
